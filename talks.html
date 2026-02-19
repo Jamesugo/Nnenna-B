@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -42,7 +42,9 @@
       .talk-card:hover {
         transform: translateY(-5px);
         border-color: rgba(99, 102, 241, 0.5);
-        box-shadow: var(--shadow-xl), 0 0 30px rgba(99, 102, 241, 0.2);
+        box-shadow:
+          var(--shadow-xl),
+          0 0 30px rgba(99, 102, 241, 0.2);
       }
 
       .talk-date {
@@ -135,9 +137,9 @@
           <li><a href="index.html" class="nav-link">Home</a></li>
           <li><a href="about.html" class="nav-link">About</a></li>
           <li><a href="research.html" class="nav-link">Research</a></li>
+          <li><a href="talks.html" class="nav-link">Talks</a></li>
           <li><a href="media.html" class="nav-link">Media</a></li>
           <li><a href="awards.html" class="nav-link">Awards</a></li>
-          <li><a href="talks.html" class="nav-link">Talks</a></li>
         </ul>
       </div>
     </nav>
@@ -147,8 +149,7 @@
       <div class="hero-content">
         <h1 class="hero-title">Talks & Presentations</h1>
         <p class="hero-subtitle">
-          Insights on energy strategy, financial leadership, and sustainable
-          growth
+         Data-driven dialogue on energy markets and financial decision-making
         </p>
       </div>
     </section>
@@ -250,26 +251,25 @@
       <div class="container">
         <!-- Tabs -->
         <div class="tabs">
-          <button class="tab-btn active" data-tab="upcoming">
+          <!-- <button class="tab-btn active" data-tab="upcoming">
             Upcoming Talks
-          </button>
+          </button> -->
+          <button class="tab-btn active" data-tab="past">Past Talks</button>
           <button class="tab-btn" data-tab="keynotes">Keynotes</button>
-          <button class="tab-btn" data-tab="past">Past Talks</button>
-          <button class="tab-btn" data-tab="workshops">Workshops</button>
         </div>
 
         <!-- Upcoming Talks Tab -->
-        <div class="tab-content active" id="upcoming">
+        <!-- <div class="tab-content active" id="upcoming">
           <div class="section-header">
             <h2 class="section-title">📅 Upcoming Talks</h2>
             <p class="section-subtitle">
               Future speaking engagements and presentations
             </p>
-          </div>
+          </div> -->
 
-          <div class="grid grid-2">
+          <!-- <div class="grid grid-2"> -->
             <!-- Upcoming Talk 1 -->
-            <div class="talk-card animate-on-scroll">
+            <!-- <div class="talk-card animate-on-scroll">
               <span class="talk-type">Keynote</span>
               <span class="talk-date">📅 March 15, 2025</span>
               <h3 class="card-title">The Future of Energy Finance</h3>
@@ -285,10 +285,10 @@
                 <span class="badge badge-accent">Finance</span>
                 <span class="badge badge-pink">1 hour</span>
               </div>
-            </div>
+            </div> -->
 
             <!-- Upcoming Talk 2 -->
-            <div class="talk-card animate-on-scroll">
+            <!-- <div class="talk-card animate-on-scroll">
               <span class="talk-type">Panel</span>
               <span class="talk-date">📅 April 22, 2025</span>
               <h3 class="card-title">Navigating Regulatory Changes</h3>
@@ -304,10 +304,10 @@
                 <span class="badge badge-accent">Strategy</span>
                 <span class="badge badge-pink">90 min</span>
               </div>
-            </div>
+            </div> -->
 
             <!-- Upcoming Talk 3 -->
-            <div class="talk-card animate-on-scroll">
+            <!-- <div class="talk-card animate-on-scroll">
               <span class="talk-type">Invited Talk</span>
               <span class="talk-date">📅 May 10, 2025</span>
               <h3 class="card-title">Sustainable Business Growth</h3>
@@ -323,10 +323,10 @@
                 <span class="badge badge-accent">Management</span>
                 <span class="badge badge-pink">45 min</span>
               </div>
-            </div>
+            </div> -->
 
             <!-- Upcoming Talk 4 -->
-            <div class="talk-card animate-on-scroll">
+            <!-- <div class="talk-card animate-on-scroll">
               <span class="talk-type">Workshop</span>
               <span class="talk-date">📅 June 5, 2025</span>
               <h3 class="card-title">Financial Modeling for Energy</h3>
@@ -342,7 +342,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
 
         <!-- Keynotes Tab -->
         <div class="tab-content" id="keynotes">
@@ -357,18 +357,21 @@
             <!-- Keynote 1 -->
             <div class="talk-card animate-on-scroll">
               <span class="talk-type">Keynote</span>
-              <span class="talk-date">📅 December 2024</span>
-              <h3 class="card-title">Advancing AI for Social Good</h3>
+              <span class="talk-date">📅 December 2025</span>
+              <h3 class="card-title">Energy Consumption and Financial Risk
+</h3>
               <div class="talk-location">
-                📍 Vancouver, Canada • NeurIPS 2024
+                📍  ICOEES-25: International Conference on Energy and Environmental Sciences
+
               </div>
               <p>
-                Keynote address on leveraging artificial intelligence to address
-                global challenges and create positive social impact.
+               Delivered the flagship keynote to a global audience from 10+ countries on the systemic links between energy consumption volatility and financial risk.
+Energy Economics Sustainability View Slides
+
               </p>
               <div style="margin-top: var(--spacing-md)">
-                <span class="badge badge-primary">AI for Good</span>
-                <span class="badge badge-accent">NeurIPS</span>
+                <span class="badge badge-primary">Energy Economics Sustainability</span>
+    
                 <a
                   href="#"
                   class="btn btn-primary"
@@ -383,7 +386,7 @@
             </div>
 
             <!-- Keynote 2 -->
-            <div class="talk-card animate-on-scroll">
+            <!-- <div class="talk-card animate-on-scroll">
               <span class="talk-type">Keynote</span>
               <span class="talk-date">📅 September 2024</span>
               <h3 class="card-title">The Green Revolution in Computing</h3>
@@ -408,10 +411,10 @@
                   >View Recording</a
                 >
               </div>
-            </div>
+            </div> -->
 
             <!-- Keynote 3 -->
-            <div class="talk-card animate-on-scroll">
+            <!-- <div class="talk-card animate-on-scroll">
               <span class="talk-type">Keynote</span>
               <span class="talk-date">📅 June 2024</span>
               <h3 class="card-title">Privacy-Preserving Machine Learning</h3>
@@ -434,10 +437,10 @@
                   >View Slides</a
                 >
               </div>
-            </div>
+            </div> -->
 
             <!-- Keynote 4 -->
-            <div class="talk-card animate-on-scroll">
+            <!-- <div class="talk-card animate-on-scroll">
               <span class="talk-type">Keynote</span>
               <span class="talk-date">📅 March 2024</span>
               <h3 class="card-title">Democratizing AI Education</h3>
@@ -459,7 +462,7 @@
                   "
                   >View Recording</a
                 >
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -469,7 +472,7 @@
           <div class="section-header">
             <h2 class="section-title">📚 Past Talks</h2>
             <p class="section-subtitle">
-              Previous presentations and speaking engagements
+              Selected conferences, panels, and invited lecture
             </p>
           </div>
 
@@ -491,14 +494,13 @@
                 >
                   <div style="flex: 1">
                     <h3 class="card-title">
-                      Deep Learning for Climate Modeling
+                       Energy Consumption and Sustainability
                     </h3>
                     <p class="card-subtitle">
-                      Climate AI Workshop • November 2024 • London, UK
+                       7th Edition Conference on Renewable and Sustainable Energy • April 2025 • Amsterdam, Netherlands
                     </p>
                     <p>
-                      Presented research on applying deep learning to improve
-                      climate change predictions and simulations.
+                      Presented research on sustainable energy consumption trends and their implications for long-term environmental and economic stability.
                     </p>
                   </div>
                   <span class="badge badge-primary">Invited Talk</span>
@@ -522,16 +524,18 @@
                   "
                 >
                   <div style="flex: 1">
-                    <h3 class="card-title">Explainable AI in Healthcare</h3>
+                    <h3 class="card-title"> Energy Consumption, Economic Growth, and Trade Openness Nexus
+</h3>
                     <p class="card-subtitle">
-                      Medical AI Symposium • October 2024 • Boston, MA
+                      14th Annual World Congress of Nano Science & Technology • May 2025
+
                     </p>
                     <p>
-                      Discussed the importance of interpretability in medical AI
-                      systems and presented case studies.
+                      Delivered a presentation analyzing the interconnections among energy consumption, economic growth, and trade openness within emerging and developed economies.
+
                     </p>
                   </div>
-                  <span class="badge badge-accent">Panel</span>
+                  <span class="badge badge-accent">Invited Talk</span>
                 </div>
               </div>
             </div>
@@ -552,16 +556,17 @@
                   "
                 >
                   <div style="flex: 1">
-                    <h3 class="card-title">Building Responsible AI Systems</h3>
+                    <h3 class="card-title"> Global Energy Production and Economic Growth Linkages
+</h3>
                     <p class="card-subtitle">
-                      Tech Leaders Summit • August 2024 • Seattle, WA
+                      Global Summit and Expo on Renewable and Sustainable Energies • November 2024 • Dubai, UAE
                     </p>
                     <p>
-                      Shared best practices for developing ethical and
-                      responsible AI systems in industry settings.
+                    Discussed the structural relationship between global energy production and economic growth, with emphasis on policy and investment implications.
+
                     </p>
                   </div>
-                  <span class="badge badge-pink">Talk</span>
+                  <span class="badge badge-pink">Invited Speaker</span>
                 </div>
               </div>
             </div>
@@ -582,136 +587,27 @@
                   "
                 >
                   <div style="flex: 1">
-                    <h3 class="card-title">The Future of Work in the AI Era</h3>
+                    <h3 class="card-title">Energy Consumption, Economic Growth, and Trade Openness Nexus
+</h3>
                     <p class="card-subtitle">
-                      TEDx University • May 2024 • Cambridge, MA
+                      2nd World Chemistry Congress (IWCC) • 2024 • Osaka, Japan
                     </p>
                     <p>
-                      TEDx talk exploring how AI will transform the workplace
-                      and what skills will be essential.
+                     Presented findings on the macroeconomic interactions between energy consumption, trade openness, and long-run economic performance.
                     </p>
                   </div>
-                  <span class="badge badge-primary">TEDx</span>
+                  <span class="badge badge-primary">Invited Talk</span>
                 </div>
               </div>
             </div>
 
-            <!-- Past Talk 5 -->
-            <div
-              class="card animate-on-scroll"
-              style="margin-bottom: var(--spacing-lg)"
-            >
-              <div class="card-body">
-                <div
-                  style="
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: start;
-                    flex-wrap: wrap;
-                    gap: var(--spacing-sm);
-                  "
-                >
-                  <div style="flex: 1">
-                    <h3 class="card-title">Federated Learning at Scale</h3>
-                    <p class="card-subtitle">
-                      ICLR 2024 • February 2024 • Virtual
-                    </p>
-                    <p>
-                      Presented research on scalable federated learning
-                      approaches for privacy-preserving distributed training.
-                    </p>
-                  </div>
-                  <span class="badge badge-accent">Conference</span>
-                </div>
+            
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Workshops Tab -->
-        <div class="tab-content" id="workshops">
-          <div class="section-header">
-            <h2 class="section-title">🛠️ Workshops & Tutorials</h2>
-            <p class="section-subtitle">
-              Hands-on training sessions and educational workshops
-            </p>
-          </div>
-
-          <div class="grid grid-2">
-            <!-- Workshop 1 -->
-            <div class="talk-card animate-on-scroll">
-              <span class="talk-type">Workshop</span>
-              <span class="talk-date">📅 November 2024</span>
-              <h3 class="card-title">Introduction to PyTorch</h3>
-              <div class="talk-location">
-                📍 University Campus • Student Workshop
-              </div>
-              <p>
-                Full-day workshop teaching fundamentals of PyTorch for deep
-                learning, including hands-on coding exercises.
-              </p>
-              <div style="margin-top: var(--spacing-md)">
-                <span class="badge badge-primary">PyTorch</span>
-                <span class="badge badge-accent">Beginner</span>
-                <span class="badge badge-pink">6 hours</span>
-              </div>
-            </div>
-
-            <!-- Workshop 2 -->
-            <div class="talk-card animate-on-scroll">
-              <span class="talk-type">Tutorial</span>
-              <span class="talk-date">📅 September 2024</span>
-              <h3 class="card-title">Advanced NLP Techniques</h3>
-              <div class="talk-location">📍 ACL 2024 • Bangkok, Thailand</div>
-              <p>
-                Tutorial on state-of-the-art natural language processing
-                methods, including transformers and large language models.
-              </p>
-              <div style="margin-top: var(--spacing-md)">
-                <span class="badge badge-primary">NLP</span>
-                <span class="badge badge-accent">Advanced</span>
-                <span class="badge badge-pink">4 hours</span>
-              </div>
-            </div>
-
-            <!-- Workshop 3 -->
-            <div class="talk-card animate-on-scroll">
-              <span class="talk-type">Workshop</span>
-              <span class="talk-date">📅 July 2024</span>
-              <h3 class="card-title">Responsible AI Development</h3>
-              <div class="talk-location">
-                📍 Industry Training • Tech Company
-              </div>
-              <p>
-                Corporate workshop on implementing ethical AI practices, bias
-                detection, and fairness in machine learning systems.
-              </p>
-              <div style="margin-top: var(--spacing-md)">
-                <span class="badge badge-primary">Ethics</span>
-                <span class="badge badge-accent">Industry</span>
-                <span class="badge badge-pink">Half-day</span>
-              </div>
-            </div>
-
-            <!-- Workshop 4 -->
-            <div class="talk-card animate-on-scroll">
-              <span class="talk-type">Tutorial</span>
-              <span class="talk-date">📅 April 2024</span>
-              <h3 class="card-title">Data Visualization Best Practices</h3>
-              <div class="talk-location">📍 Data Science Bootcamp • Online</div>
-              <p>
-                Interactive tutorial on creating effective data visualizations
-                using modern tools and following design principles.
-              </p>
-              <div style="margin-top: var(--spacing-md)">
-                <span class="badge badge-accent">Visualization</span>
-                <span class="badge badge-pink">Intermediate</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+      
 
     <!-- SPEAKING TOPICS SECTION -->
     <section class="section">
@@ -725,47 +621,65 @@
 
         <div class="grid grid-3">
           <div class="card animate-on-scroll">
-            <h3 class="card-title">🤖 Artificial Intelligence</h3>
+            <h3 class="card-title">⚡ Energy Economics & Policy</h3>
             <ul style="list-style: none; padding: 0">
               <li style="padding: var(--spacing-xs) 0">
-                ✓ Machine Learning Fundamentals
+                ✓ Energy Consumption and Economic Growth Dynamics
+               
               </li>
               <li style="padding: var(--spacing-xs) 0">
-                ✓ Deep Learning Applications
+                ✓ Energy Volatility and Financial Risk
               </li>
-              <li style="padding: var(--spacing-xs) 0">✓ Interpretable AI</li>
+             
+              <li style="padding: var(--spacing-xs) 0"> ✓ Global Energy Production and Macroeconomic Stability</li>
               <li style="padding: var(--spacing-xs) 0">
-                ✓ AI Ethics & Fairness
+                 ✓ Energy Policy Design for Emerging Economies
               </li>
             </ul>
           </div>
 
           <div class="card animate-on-scroll">
-            <h3 class="card-title">🌱 Sustainable Technology</h3>
+            <h3 class="card-title">🌍 Sustainability & Development</h3>
             <ul style="list-style: none; padding: 0">
-              <li style="padding: var(--spacing-xs) 0">✓ Green Computing</li>
+              <li style="padding: var(--spacing-xs) 0">✓ Renewable Energy and Long-Term Growth
+</li>
               <li style="padding: var(--spacing-xs) 0">
-                ✓ Energy-Efficient Algorithms
+                ✓ Sustainable Energy Transitions
               </li>
               <li style="padding: var(--spacing-xs) 0">
-                ✓ Climate Tech Solutions
+               ✓ Energy Security and Development Strategy
               </li>
               <li style="padding: var(--spacing-xs) 0">
-                ✓ Sustainable Infrastructure
+                ✓ Climate–Growth Trade-offs in Developing Economies
               </li>
             </ul>
           </div>
 
           <div class="card animate-on-scroll">
-            <h3 class="card-title">🔐 Privacy & Security</h3>
+            <h3 class="card-title">📊 Trade, Finance & Global Markets</h3>
             <ul style="list-style: none; padding: 0">
               <li style="padding: var(--spacing-xs) 0">
-                ✓ Privacy-Preserving ML
+                ✓ Energy, Trade Openness, and Economic Integration
               </li>
-              <li style="padding: var(--spacing-xs) 0">✓ Secure Computation</li>
-              <li style="padding: var(--spacing-xs) 0">✓ Data Protection</li>
+              <li style="padding: var(--spacing-xs) 0">✓ Energy Markets and Capital Flows</li>
+              <li style="padding: var(--spacing-xs) 0"> ✓ Commodity Shocks and Financial Stability</li>
               <li style="padding: var(--spacing-xs) 0">
-                ✓ Cryptographic Methods
+                ✓ Macroeconomic Risk Modeling in Energy-Dependent Economies
+              </li>
+            </ul>
+          </div>
+          <div class="card animate-on-scroll">
+            <h3 class="card-title">📈 Quantitative & Analytical Approaches
+</h3>
+            <ul style="list-style: none; padding: 0">
+              <li style="padding: var(--spacing-xs) 0">
+                ✓ Econometric Modeling of Energy–Growth Nexus
+              </li>
+              <li style="padding: var(--spacing-xs) 0"> ✓ Time Series Analysis of Energy Markets</li>
+              <li style="padding: var(--spacing-xs) 0">  ✓ Panel Data Approaches in Energy Economics</li>
+              <li style="padding: var(--spacing-xs) 0">
+                 ✓ Risk Forecasting in Energy-Driven Economies
+
               </li>
             </ul>
           </div>
@@ -789,7 +703,6 @@
           <p class="footer-text">
             © Nnenna B. Amuji 2025. All rights reserved.
           </p>
-          
         </div>
       </div>
     </footer>
