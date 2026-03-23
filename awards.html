@@ -63,6 +63,41 @@
       .category-section {
         margin-bottom: var(--spacing-3xl);
       }
+
+      .award-visual {
+        width: 350px;
+        height: 250px;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: var(--radius-lg);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        border: 1px dashed rgba(255, 255, 255, 0.2);
+        overflow: hidden;
+      }
+
+      .award-visual img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        transition: transform var(--transition-base);
+      }
+
+      .award-card:hover .award-visual img {
+        transform: scale(1.05);
+      }
+
+      @media (max-width: 768px) {
+        .award-card {
+          flex-direction: column;
+        }
+        .award-visual {
+          width: 100%;
+          height: auto;
+          aspect-ratio: 4/3;
+        }
+      }
     </style>
   </head>
   <body>
@@ -93,8 +128,8 @@
       <div class="hero-content">
         <h1 class="hero-title">Awards & Honors</h1>
         <p class="hero-subtitle">
-          Recognition for leadership in finance, strategy, and sustainable
-          energy development
+          Recognition for excellence in academics, entrepreneurship, leadership
+          and sports
         </p>
       </div>
     </section>
@@ -103,14 +138,14 @@
     <section class="section">
       <div class="container">
         <div class="grid grid-4">
-          <div class="text-center animate-on-scroll">
+          <a href="#academic" class="text-center animate-on-scroll" style="text-decoration: none; color: inherit; display: block; cursor: pointer;">
             <div
               style="
                 font-size: var(--text-5xl);
                 margin-bottom: var(--spacing-sm);
               "
             >
-              🏆
+              🎓
             </div>
             <h3
               class="text-gradient"
@@ -119,11 +154,31 @@
                 margin-bottom: var(--spacing-xs);
               "
             >
-              12+
+              Academic
             </h3>
-            <p class="text-muted">Industry Awards</p>
-          </div>
-          <div class="text-center animate-on-scroll">
+            <p class="text-muted">Academic Excellence</p>
+          </a>
+          <a href="#entrepreneurship" class="text-center animate-on-scroll" style="text-decoration: none; color: inherit; display: block; cursor: pointer;">
+            <div
+              style="
+                font-size: var(--text-5xl);
+                margin-bottom: var(--spacing-sm);
+              "
+            >
+              🚀
+            </div>
+            <h3
+              class="text-gradient"
+              style="
+                font-size: var(--text-4xl);
+                margin-bottom: var(--spacing-xs);
+              "
+            >
+              Entrepreneurship
+            </h3>
+            <p class="text-muted">Business Ventures</p>
+          </a>
+          <a href="#leadership" class="text-center animate-on-scroll" style="text-decoration: none; color: inherit; display: block; cursor: pointer;">
             <div
               style="
                 font-size: var(--text-5xl);
@@ -139,18 +194,18 @@
                 margin-bottom: var(--spacing-xs);
               "
             >
-              8
+              Leadership
             </h3>
             <p class="text-muted">Leadership Honors</p>
-          </div>
-          <div class="text-center animate-on-scroll">
+          </a>
+          <a href="#sports" class="text-center animate-on-scroll" style="text-decoration: none; color: inherit; display: block; cursor: pointer;">
             <div
               style="
                 font-size: var(--text-5xl);
                 margin-bottom: var(--spacing-sm);
               "
             >
-              🌱
+              🏅
             </div>
             <h3
               class="text-gradient"
@@ -159,180 +214,89 @@
                 margin-bottom: var(--spacing-xs);
               "
             >
-              5
+              Sports
             </h3>
-            <p class="text-muted">Sustainability Recognitions</p>
-          </div>
-          <div class="text-center animate-on-scroll">
-            <div
-              style="
-                font-size: var(--text-5xl);
-                margin-bottom: var(--spacing-sm);
-              "
-            >
-              👥
-            </div>
-            <h3
-              class="text-gradient"
-              style="
-                font-size: var(--text-4xl);
-                margin-bottom: var(--spacing-xs);
-              "
-            >
-              10
-            </h3>
-            <p class="text-muted">Board Memberships</p>
-          </div>
+            <p class="text-muted">Sporting Achievements</p>
+          </a>
         </div>
       </div>
     </section>
 
-    <!-- INDUSTRY AWARDS SECTION -->
-    <section class="section" style="background: var(--color-bg-medium)">
+    <!-- ACADEMIC AWARDS SECTION -->
+    <section
+      id="academic"
+      class="section"
+      style="background: var(--color-bg-medium)"
+    >
       <div class="container">
         <div class="category-section">
           <div class="section-header">
-            <h2 class="section-title">🏆 Industry Leadership Awards</h2>
+            <h2 class="section-title">🎓 Academic Awards</h2>
             <p class="section-subtitle">
-              Recognition for outstanding contributions to corporate strategy
-              and finance
+              Awards recognising outstanding achievement in finance, energy
+              economics, and analytical research.
             </p>
           </div>
-
           <div style="max-width: 900px; margin: 0 auto">
-            <!-- Award 1 -->
             <div class="award-card animate-on-scroll">
-              <div class="award-icon">🏆</div>
-              <div class="award-content">
-                <span class="award-year">2024</span>
-                <h3 class="card-title">CFO of the Year</h3>
-                <p class="card-subtitle">Energy Finance Weekly</p>
-                <p>
-                  Recognized for exceptional financial stewardship and strategic
-                  leadership during a period of rapid market transition.
-                </p>
-                <div style="margin-top: var(--spacing-sm)">
-                  <span class="badge badge-primary">Executive</span>
-                  <span class="badge badge-accent">Finance</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Award 2 -->
-            <div class="award-card animate-on-scroll">
-              <div class="award-icon">⭐</div>
-              <div class="award-content">
-                <span class="award-year">2023</span>
-                <h3 class="card-title">Excellence in Strategic Planning</h3>
-                <p class="card-subtitle">Corporate Strategy Association</p>
-                <p>
-                  Awarded for the development and execution of a transformative
-                  5-year strategic plan that doubled company valuation.
-                </p>
-                <div style="margin-top: var(--spacing-sm)">
-                  <span class="badge badge-primary">Strategy</span>
-                  <span class="badge badge-pink">Growth</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Award 3 -->
-            <div class="award-card animate-on-scroll">
-              <div class="award-icon">🌟</div>
-              <div class="award-content">
-                <span class="award-year">2023</span>
-                <h3 class="card-title">Sustainable Business Leader</h3>
-                <p class="card-subtitle">Green Economy Summit</p>
-                <p>
-                  Honored for integrating sustainability principles into core
-                  business operations and driving verifiable environmental
-                  impact.
-                </p>
-                <div style="margin-top: var(--spacing-sm)">
-                  <span class="badge badge-accent">Sustainability</span>
-                  <span class="badge badge-pink">Leadership</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Award 4 -->
-            <div class="award-card animate-on-scroll">
-              <div class="award-icon">⚡</div>
-              <div class="award-content">
-                <span class="award-year">2022</span>
-                <h3 class="card-title">Energy Innovator Award</h3>
-                <p class="card-subtitle">Global Energy Forum</p>
-                <p>
-                  Recognized for pioneering new financing models for distributed
-                  energy resource projects.
-                </p>
-                <div style="margin-top: var(--spacing-sm)">
-                  <span class="badge badge-primary">Energy</span>
-                  <span class="badge badge-accent">Innovation</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- OTHER RECOGNITIONS SECTION (Keep structure but update content if needed) -->
-    <section class="section">
-      <div class="container">
-        <div class="category-section">
-          <div class="section-header">
-            <h2 class="section-title">💼 Professional Milestones</h2>
-            <p class="section-subtitle">Key achievements and certifications</p>
-          </div>
-
-          <div style="max-width: 900px; margin: 0 auto">
-            <!-- Milestone 1 -->
-            <div
-              class="award-card animate-on-scroll"
-              style="border-left-color: var(--color-accent-cyan)"
-            >
               <div
-                class="award-icon"
-                style="background: var(--gradient-accent)"
+                class="award-visual"
               >
-                📜
+                <img
+                  src="assets/certs/academic/Screenshot (96).png"
+                  alt="Award Image"
+                />
+              </div>
+              <div class="award-content">
+                <span class="award-year">2018</span>
+                <h3 class="card-title">Hanban Summer Camp Award</h3>
+              </div>
+            </div>
+
+            <div class="award-card animate-on-scroll">
+              <div
+                class="award-visual"
+              >
+                <img
+                  src="assets/certs/academic/Screenshot (97).png"
+                  alt="Award Image"
+                />
+              </div>
+              <div class="award-content">
+                <span class="award-year">2016</span>
+                <h3 class="card-title">Confucius Scholarship</h3>
+              </div>
+            </div>
+
+            <div class="award-card animate-on-scroll">
+              <div
+                class="award-visual"
+              >
+                <img
+                  src="assets/certs/academic/Screenshot (98).png"
+                  alt="Award Image"
+                />
               </div>
               <div class="award-content">
                 <span class="award-year">2021</span>
-                <h3 class="card-title">Chartered Financial Analyst (CFA)</h3>
-                <p class="card-subtitle">CFA Institute</p>
-                <p>
-                  Achieved prestigious professional credential demonstrating
-                  expertise in investment management and financial analysis.
-                </p>
-                <div style="margin-top: var(--spacing-sm)">
-                  <span class="badge badge-accent">Certification</span>
-                  <span class="badge badge-pink">Finance</span>
-                </div>
+                <h3 class="card-title">
+                  CUPB President Award for Excellent Graduate
+                </h3>
               </div>
             </div>
 
-            <!-- Milestone 2 -->
-            <div
-              class="award-card animate-on-scroll"
-              style="border-left-color: var(--color-accent-pink)"
-            >
-              <div class="award-icon" style="background: var(--gradient-warm)">
-                🎓
+            <div class="award-card animate-on-scroll">
+              <div
+                class="award-visual"
+              >
+                <img
+                  src="assets/certs/academic/Screenshot (99).png"
+                  alt="Award Image"
+                />
               </div>
               <div class="award-content">
-                <span class="award-year">2020</span>
-                <h3 class="card-title">MBA - Energy Finance</h3>
-                <p class="card-subtitle">Top Tier University</p>
-                <p>
-                  Graduated with distinction, specializing in financial
-                  strategies for the energy sector.
-                </p>
-                <div style="margin-top: var(--spacing-sm)">
-                  <span class="badge badge-primary">Education</span>
-                  <span class="badge badge-accent">Masters</span>
-                </div>
+                <span class="award-year">Year</span>
+                <h3 class="card-title">CUPB Speakers Forum 2nd runner up</h3>
               </div>
             </div>
           </div>
@@ -340,90 +304,171 @@
       </div>
     </section>
 
-    <!-- OTHER RECOGNITIONS SECTION -->
-    <section class="section">
+    <!-- ENTREPRENEURSHIP AWARDS SECTION -->
+    <section id="entrepreneurship" class="section">
       <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">🌟 Other Recognitions</h2>
-          <p class="section-subtitle">Additional honors and achievements</p>
+        <div class="category-section">
+          <div class="section-header">
+            <h2 class="section-title">🚀 Entrepreneurship & Innovation</h2>
+            <p class="section-subtitle">
+              Awards for innovation, strategic thinking, and entrepreneurial
+              initiatives across finance and energy-related domains.
+            </p>
+          </div>
+          <div style="max-width: 900px; margin: 0 auto">
+            <div class="award-card animate-on-scroll">
+              <div
+                class="award-visual"
+              >
+                <img
+                  src="assets/certs/enterpre/Screenshot (100).png"
+                  alt="Award Image"
+                />
+              </div>
+              <div class="award-content">
+                <span class="award-year">Year</span>
+                <h3 class="card-title">NIDO China Young Achievers Award</h3>
+              </div>
+            </div>
+
+            <div class="award-card animate-on-scroll">
+              <div
+                class="award-visual"
+              >
+                <img
+                  src="assets/certs/enterpre/Screenshot (101).png"
+                  alt="Award Image"
+                />
+              </div>
+              <div class="award-content">
+                <span class="award-year">Year</span>
+                <h3 class="card-title">Pride of Africa - AfriJoy Award</h3>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+    </section>
 
-        <div class="grid grid-3">
-          <div class="card animate-on-scroll">
-            <div class="card-header">
-              <h3 class="card-title">Forbes 30 Under 30</h3>
-              <p class="card-subtitle">2023 • Science Category</p>
+    <!-- LEADERSHIP AWARDS SECTION -->
+    <section
+      id="leadership"
+      class="section"
+      style="background: var(--color-bg-medium)"
+    >
+      <div class="container">
+        <div class="category-section">
+          <div class="section-header">
+            <h2 class="section-title">🚀 Leadership & Impact</h2>
+            <p class="section-subtitle">
+              Recognition for leadership in professional, academic, and global
+              engagement initiatives
+            </p>
+          </div>
+          <div style="max-width: 900px; margin: 0 auto">
+            <div class="award-card animate-on-scroll">
+              <div
+                class="award-visual"
+              >
+                <img
+                  src="assets/certs/leadership/Screenshot (102).png"
+                  alt="Award Image"
+                />
+              </div>
+              <div class="award-content">
+                <span class="award-year">2019</span>
+                <h3 class="card-title">2017-2018 ISA Certificate of Leadership</h3>
+              </div>
             </div>
-            <div class="card-body">
-              <p>
-                Featured in Forbes' prestigious list of young innovators making
-                significant impact in science and technology.
-              </p>
+
+            <div class="award-card animate-on-scroll">
+              <div
+                class="award-visual"
+              >
+                <img
+                  src="assets/certs/leadership/Screenshot (103).png"
+                  alt="Award Image"
+                />
+              </div>
+              <div class="award-content">
+                <span class="award-year">2019</span>
+                <h3 class="card-title">Honorary Award for Youth Host</h3>
+              </div>
+            </div>
+
+            <div class="award-card animate-on-scroll">
+              <div
+                class="award-visual"
+              >
+                <img
+                  src="assets/certs/leadership/Screenshot (104).png"
+                  alt="Award Image"
+                />
+              </div>
+              <div class="award-content">
+                <span class="award-year">2018</span>
+                <h3 class="card-title">International Student Festival Organizer</h3>
+              </div>
+            </div>
+
+            <div class="award-card animate-on-scroll">
+              <div
+                class="award-visual"
+              >
+                <img
+                  src="assets/certs/leadership/Screenshot (105).png"
+                  alt="Award Image"
+                />
+              </div>
+              <div class="award-content">
+                <span class="award-year">2019</span>
+                <h3 class="card-title">ISA Leadership Award</h3>
+              </div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
 
-          <div class="card animate-on-scroll">
-            <div class="card-header">
-              <h3 class="card-title">MIT Technology Review Innovator</h3>
-              <p class="card-subtitle">2022 • Innovators Under 35</p>
-            </div>
-            <div class="card-body">
-              <p>
-                Recognized as one of the world's top young innovators by MIT
-                Technology Review.
-              </p>
-            </div>
+    <!-- SPORTS AWARDS SECTION -->
+    <section id="sports" class="section">
+      <div class="container">
+        <div class="category-section">
+          <div class="section-header">
+            <h2 class="section-title">🏅 Sports</h2>
+            <p class="section-subtitle">
+              Recognition for athletic achievements
+            </p>
           </div>
+          <div style="max-width: 900px; margin: 0 auto">
+            <div class="award-card animate-on-scroll">
+              <div
+                class="award-visual"
+              >
+                <img
+                  src="assets/certs/sports/Screenshot (106).png"
+                  alt="Award Image"
+                />
+              </div>
+              <div class="award-content">
+                <span class="award-year">2019</span>
+                <h3 class="card-title">2019 CUPB Sports Organiser Award</h3>
+              </div>
+            </div>
 
-          <div class="card animate-on-scroll">
-            <div class="card-header">
-              <h3 class="card-title">ACM Distinguished Member</h3>
-              <p class="card-subtitle">2024</p>
-            </div>
-            <div class="card-body">
-              <p>
-                Elected as a Distinguished Member of the Association for
-                Computing Machinery for outstanding contributions.
-              </p>
-            </div>
-          </div>
-
-          <div class="card animate-on-scroll">
-            <div class="card-header">
-              <h3 class="card-title">Best Presentation Award</h3>
-              <p class="card-subtitle">2023 • CVPR Conference</p>
-            </div>
-            <div class="card-body">
-              <p>
-                Awarded for exceptional presentation skills and research
-                communication at premier computer vision conference.
-              </p>
-            </div>
-          </div>
-
-          <div class="card animate-on-scroll">
-            <div class="card-header">
-              <h3 class="card-title">Teaching Excellence Award</h3>
-              <p class="card-subtitle">2022 • University</p>
-            </div>
-            <div class="card-body">
-              <p>
-                Recognized for outstanding teaching and mentoring of
-                undergraduate and graduate students.
-              </p>
-            </div>
-          </div>
-
-          <div class="card animate-on-scroll">
-            <div class="card-header">
-              <h3 class="card-title">Community Impact Award</h3>
-              <p class="card-subtitle">2021</p>
-            </div>
-            <div class="card-body">
-              <p>
-                Honored for contributions to STEM education and outreach
-                programs in underserved communities.
-              </p>
+            <div class="award-card animate-on-scroll">
+              <div
+                class="award-visual"
+              >
+                <img
+                  src="assets/certs/sports/Screenshot (106).png"
+                  alt="Award Image"
+                />
+              </div>
+              <div class="award-content">
+                <span class="award-year">2019</span>
+                <h3 class="card-title">Sports Phalanx Award</h3>
+              </div>
             </div>
           </div>
         </div>
